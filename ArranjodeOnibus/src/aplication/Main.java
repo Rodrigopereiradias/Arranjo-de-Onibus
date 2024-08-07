@@ -18,7 +18,7 @@ public class Main {
         
         for (int i = 0; i < onibus.getTotalVagas(); i++) {
         	
-            System.out.println("Banco" + (i + 1));
+            System.out.println("Banco " + (i + 1));
             
             System.out.print("Nome: ");
             String nome = Teclado.next();

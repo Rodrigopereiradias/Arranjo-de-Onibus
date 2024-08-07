@@ -36,7 +36,7 @@ public class Onibus {
 	        for (int i = 0; i < totalVagas; i++) {
 	            if (vagas[i] != null) {
 	                Passageiro p = vagas[i];
-	                System.out.println("Vaga " + (i + 1) + ": Nome: " + p.getNome() + ", CPF: " + p.getCpf() + ", Idade: " + p.getIdade() + ", Sexo: " + (p.isSexo() ? "Masculino" : "Feminino"));
+	                System.out.println("Banco " + (i + 1) + ": Nome: " + p.getNome() + ", CPF: " + p.getCpf() + ", Idade: " + p.getIdade() + ", Sexo: " + (p.isSexo() ? "Masculino" : "Feminino"));
 	            }
 	        }
 	    }
