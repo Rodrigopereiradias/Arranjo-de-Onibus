@@ -13,7 +13,7 @@ public class Main {
 		
 		//tecladp
         Scanner Teclado = new Scanner(System.in);
-        Onibus onibus = new Onibus(4);
+        Onibus onibus = new Onibus(1);
        
         
         
