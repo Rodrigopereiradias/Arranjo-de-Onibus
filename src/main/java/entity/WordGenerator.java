@@ -52,18 +52,23 @@ public class WordGenerator {
             
             // Campos Informações
             addField(document, "Nome do Motorista");
+            addField(document, "___________________________________________________________");
             addField(document, "Aparência do Motorista");
+            addField(document, "___________________________________________________________");
             addField(document, "Número da Placa");
+            addField(document, "___________________________________________________________");
             addField(document, "Número do Ônibus");
+            addField(document, "___________________________________________________________");
             addField(document, "Estado dos Pneus");
-            addField(document, "Banheiro");
-            addField(document, "Sim");
-            addField(document, "Não");
-            addField(document, "Extintor de Incêndio");
-            addField(document, "Sim");
-            addField(document, "Não");
+            addField(document, "___________________________________________________________");
+            addField(document, "Banheiro      Sim      Não");
+            addField(document, "Extintor de Incêndio      Sim      Não");
             addField(document, "Estado do Ônibus e Limpeza");
-           
+            addField(document, "___________________________________________________________");
+            addField(document, "___________________________________________________________");
+            addField(document, "___________________________________________________________");
+            
+            
             // Adicionar observação
             XWPFParagraph obs = document.createParagraph();
             XWPFRun obsRun = obs.createRun();
