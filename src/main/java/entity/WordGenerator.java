@@ -76,7 +76,10 @@ public class WordGenerator {
             obsRun.setText("*Obs. Por favor tirar uma foto dessas informações, por segurança");
             obsRun.setItalic(true);
             
-            String filePath = "Relacao-Passageiros.docx";
+         // Caminho para a área de trabalho
+            String userHome = System.getProperty("user.home");
+            String filePath = userHome + "\\Documents\\Relacao-Passageiros.docx";
+            
             try (FileOutputStream out = new FileOutputStream(filePath)) {
                 document.write(out);
             }
@@ -87,6 +90,7 @@ public class WordGenerator {
             File file = new File(filePath);
             if (file.exists()) {
                 System.out.print("Documento Word criado com sucesso!");
+                System.out.print("Documento Word criado na pasta Documentos");
             } else {
                 System.out.println("Falha ao criar o documento Word.");
             }
