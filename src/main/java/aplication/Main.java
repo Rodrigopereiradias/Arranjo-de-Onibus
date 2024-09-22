@@ -14,7 +14,7 @@ public class Main {
         UIManager.put("OptionPane.buttonFont", new Font("Arial", Font.PLAIN, 18));
         UIManager.put("OptionPane.inputFont", new Font("Arial", Font.PLAIN, 18));
 
-        Onibus onibus = new Onibus(2);
+        Onibus onibus = new Onibus(46);
 
         for (int i = 0; i < onibus.getTotalVagas(); i++) {
             JPanel panel = new JPanel(new GridLayout(0, 1));
@@ -96,7 +96,8 @@ public class Main {
             }
         }
         JOptionPane.showMessageDialog(null, "Passageiros no ônibus:\n" + vagas.toString(), "Relação de Passageiros", JOptionPane.INFORMATION_MESSAGE);
-
+        JOptionPane.showMessageDialog(null, "O programa foi criado com sucesso na pasta Documentos com o nome Relacao-Passageiros", "Relação de Passageiros", JOptionPane.INFORMATION_MESSAGE);
+        
         // Gerar o documento Word
         WordGenerator.gerarDocumento(onibus.getVagas());
     }
