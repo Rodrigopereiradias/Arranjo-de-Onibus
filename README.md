@@ -1,3 +1,56 @@
++-------------------+
+|       Main        |
++-------------------+
+| - onibus: Onibus  |
++-------------------+
+| + main(args: String[]): void |
++-------------------+
+
++-------------------+
+|      Onibus       |
++-------------------+
+| - vagas: Passageiro[] |
+| - totalVagas: int  |
++-------------------+
+| + Onibus(totalVagas: int) |
+| + adicionaPassageiro(passageiro: Passageiro, vaga: int): boolean |
+| + mostraVagas(): void |
+| + mostrarInformacoesPassageiros(): void |
+| + getVagas(): Passageiro[] |
+| + setVagas(vagas: Passageiro[]): void |
+| + getTotalVagas(): int |
+| + setTotalVagas(totalVagas: int): void |
++-------------------+
+
++-------------------+
+|    Passageiro     |
++-------------------+
+| - idade: int      |
+| - nome: String    |
+| - cpf: String     |
+| - sexo: boolean   |
++-------------------+
+| + Passageiro(nome: String, cpf: String, idade: int, sexo: boolean) |
+| + getIdade(): int |
+| + setIdade(idade: int): void |
+| + getNome(): String |
+| + setNome(nome: String): void |
+| + getCpf(): String |
+| + setCpf(cpf: String): void |
+| + isSexo(): boolean |
+| + setSexo(sexo: boolean): void |
++-------------------+
+
++-------------------+
+|  WordGenerator    |
++-------------------+
+|                   |
++-------------------+
+| + gerarDocumento(passageiro: Passageiro[]): void |
+| - addField(document: XWPFDocument, fieldName: String): void |
++-------------------+
+
+
 Main.java
 Localização: src/main/java/aplication/Main.java
 
