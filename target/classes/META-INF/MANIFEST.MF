@@ -1,4 +1,10 @@
 Manifest-Version: 1.0
-Build-Jdk-Spec: 22
+Build-Jdk-Spec: 23
+Class-Path: poi-ooxml-5.2.3.jar poi-5.2.3.jar commons-codec-1.15.jar com
+ mons-math3-3.6.1.jar SparseBitSet-1.2.jar poi-ooxml-lite-5.2.3.jar xmlb
+ eans-5.1.1.jar commons-compress-1.21.jar commons-io-2.11.0.jar curvesap
+ i-1.07.jar commons-collections4-4.4.jar log4j-core-2.17.1.jar log4j-api
+ -2.17.1.jar
+Main-Class: aplicacionbus.App
 Created-By: Maven Integration for Eclipse
 
